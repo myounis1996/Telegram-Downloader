@@ -7,11 +7,15 @@ A console script to download media from a Telegram chat, channel, or group.
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
+- [License](#license)
+- [Acknowledgements](#acknowledgements)
 
 ## Features
 
 - Download media from Telegram chats, channels, and groups.
 - Support for various media types: photos, videos, and more soon.
+- Support download self-destructing media.
+- Support download view-only media.
 - Easy-to-use console interface.
 - Customizable download settings.
 
@@ -30,9 +34,27 @@ A console script to download media from a Telegram chat, channel, or group.
     ```
 2. Navigate to the project directory:
     ```bash
-    cd telegram-media-downloader
+    cd Telegram-Downloader
     ```
-3. Install dependencies:
+3. Install Telethon:
     ```bash
-    pip install -r requirements.txt
+    pip3 install telethon
     ```
+   
+## Usage
+
+1. Configure the script with your Telegram API credentials. (Optional)
+2. Run the script:
+    ```bash
+    python main.py
+    ```
+   
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+
+## Acknowledgements
+
+- [Telethon](https://github.com/LonamiWebs/Telethon) - A Python Telegram client library used to interact with the Telegram API.
+- [Telegram API](https://core.telegram.org/api) - The API that enables interaction with Telegram's platform.
