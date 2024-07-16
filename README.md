@@ -6,6 +6,7 @@ A console script to download media from a Telegram chat, channel, or group.
 
 - [Features](#features)
 - [Installation](#installation)
+- [Configuration](#configuration)
 - [Usage](#usage)
 - [License](#license)
 - [Acknowledgements](#acknowledgements)
@@ -41,9 +42,24 @@ A console script to download media from a Telegram chat, channel, or group.
     pip3 install telethon
     ```
    
+## Configuration
+
+This script requires the following environment variables:
+
+- `api_id`: Your Telegram API id.
+- `api_hash`: Your Telegram API hash.
+
+
+Create a `config.py` file and add the following:
+
+```env
+api_id = your_telegram_api_id_here
+api_hash = your_telegram_api_hash_here
+```
+
 ## Usage
 
-1. Configure the script with your Telegram API credentials. (Optional)
+1. Configure the script with your Telegram API credentials.
 2. Run the script:
     ```bash
     python main.py
