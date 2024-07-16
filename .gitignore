@@ -1,3 +1,4 @@
-self
+Downloads/*
 *.session
 .idea
+config.py
