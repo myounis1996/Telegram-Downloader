@@ -1,4 +1,5 @@
 from telethon import TelegramClient
+from telethon.errors import SessionPasswordNeededError
 import asyncio
 import sys
 import config
@@ -70,7 +71,13 @@ async def do_login():
     phone_number = input("Enter your phone number: ")
     await client.send_code_request(phone_number)
     code = input("Enter the code you received: ")
-    await client.sign_in(phone_number, code)
+    
+    try:
+        await client.sign_in(phone_number, code)
+    except SessionPasswordNeededError:
+        password = input("Enter your 2FA password: ")
+        await client.sign_in(password=password)
+    
     await show_options()
 
 

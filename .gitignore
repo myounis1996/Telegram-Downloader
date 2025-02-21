@@ -1,5 +1,6 @@
 Downloads/*
 *.session
+*.session-journal
 .idea
 config.py
 __pycache__/*
