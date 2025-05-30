@@ -49,6 +49,12 @@ This script requires the following environment variables:
 - `api_id`: Your Telegram API id.
 - `api_hash`: Your Telegram API hash.
 
+### How to obtain `api_id` and `api_hash`
+
+1. Go to [https://my.telegram.org/auth?to=apps](https://my.telegram.org/auth?to=apps) and log in with your Telegram account.
+2. Click on **API development tools**.
+3. Fill in the required fields (you can use any app title and short name).
+4. After submitting, you will see your `api_id` and `api_hash` on the page.
 
 Create a `config.py` file and add the following:
 
